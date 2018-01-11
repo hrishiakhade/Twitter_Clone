@@ -26,7 +26,7 @@ export default class SearchPage extends React.Component {
 
 
             <Header searchBar style={{ backgroundColor: 'white', elevation: 0 }}>
-                <Item onPress={() => this.props.navigation.goBack()}>
+                <Item onPress={() => this.props.navigation.navigate("HomeScreen")}>
 
                     {/* <Icon name="ios-search" /> */}
                     <Icon name="arrow-back"
