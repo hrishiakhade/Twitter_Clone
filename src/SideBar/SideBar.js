@@ -72,61 +72,91 @@ class SideBar extends React.Component {
                         borderBottomColor: 'grey', elevation: 0,
                         borderBottomWidth: 1, marginBottom: 0
                     }}>
-                        <CardItem>
+                    
+                        <CardItem style={{flexDirection: 'row'}}>
                             <List >
+                            
                                 <ListItem icon noBorder>
-                                    <Left>
-                                        <MaterialIcons name='person-outline' size={26}
+                                    
 
-                                        />
-                                    </Left>
-                                    <Body>
-                                        <Text >Profile</Text>
-                                    </Body>
+<View style={{width: 40, flexDirection: 'row', justifyContent: 'center'}}>
+        <MaterialIcons name='person-outline' size={26} style={{textAlign: 'center'}}/>
+      </View>
+<View style={{flex: 1}}>
+        <Text>Profile</Text>
+      </View>
 
-                                    <Right />
+
+      
                                 </ListItem>
-                                <ListItem icon noBorder >
-                                    <Left>
-                                        <Ionicons name="ios-list-box-outline" size={26} />
-                                    </Left>
-                                    <Body>
-                                        <Text >Lists</Text>
-                                    </Body>
-                                    <Right />
-                                </ListItem>
+                               
 
-                                <ListItem icon noBorder>
-                                    <Left>
-                                        <Ionicons name="ios-flash-outline" size={26} />
-                                    </Left>
+                               <ListItem icon noBorder>
+                                    
 
-                                    <Text >Moments</Text>
+<View style={{width: 40, flexDirection: 'row', justifyContent: 'center'}}>
+        <Ionicons name="ios-list-box-outline" size={26} style={{textAlign: 'center'}}/>
+      </View>
+<View style={{flex: 1}}>
+        <Text>Lists</Text>
+      </View>
 
-                                    <Right />
-                                </ListItem>
-                                <ListItem icon noBorder >
-                                    <Left>
-                                        <MaterialIcons name="content-copy" size={26} />
-                                    </Left>
+</ListItem>
+      
+<ListItem icon noBorder>
+
+      <View style={{width: 40, flexDirection: 'row', justifyContent: 'center'}}>
+         <Ionicons name="ios-flash-outline" size={26} style={{textAlign: 'center'}}/>
+      </View>
+      
+<View style={{flex: 1}}>
+        <Text>Moments</Text>
+      </View>
+
+</ListItem>
+
+
+                                   
+    <ListItem icon noBorder>
+    <Left>
+      <View style={{width: 40, flexDirection: 'row', justifyContent: 'center'}}>
+         <MaterialIcons name="content-copy" size={26}  style={{textAlign: 'center'}}/>
+      </View>
+      </Left>
+<View style={{flex: 0}}>
+        <Text style={{marginLeft:-17}}>Hightlights</Text>
+      </View>
+
+</ListItem>  
+    </List>
+
+                        </CardItem>
+                  
+                    </Card>   
+                  
+                                
+                                
+                               {/* <ListItem icon noBorder >
+                                    
+                                        <MaterialIcons name="content-copy" size={26} 
+                                        style={{ paddingRight: 0 ,textAlign: 'center',justifyContent: 'flex-start'}}/>
+                                    
 
 
                                     <Text >Hightlights</Text>
 
-                                    <Right />
-                                </ListItem>
+                                    
 
-                            </List>
+                                </ListItem>*/}
 
-                        </CardItem>
-                    </Card>
+                       
 
-
+ 
                     <Card style={{
                         borderBottomColor: 'grey', elevation: 0,
                         borderBottomWidth: 1, marginBottom: 0
                     }}>
-                        <CardItem >
+                        <CardItem style={{flexDirection: 'row'}}>
                             <List>
                                 <ListItem noBorder>
                                     <Text>Settings and Privacy</Text>
@@ -137,7 +167,8 @@ class SideBar extends React.Component {
                             </List>
                         </CardItem>
                     </Card>
-                </Content>
+                   
+                
 
 
 
@@ -180,7 +211,10 @@ class SideBar extends React.Component {
                 </Footer>
 
 
+
+</Content>
             </Container>
+
         );
     }
 };
